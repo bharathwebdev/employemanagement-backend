@@ -1,14 +1,11 @@
 spring:
   datasource:
-    url: postgres://emp_kcy2_user:VbKBkto1bkjYFoKWIUCaZ6y5xROcQi7M@dpg-cld5acjmot1c73dldqt0-a.singapore-postgres.render.com/emp_kcy2
+    url: jdbc:postgresql://dpg-cld5acjmot1c73dldqt0-a.singapore-postgres.render.com/emp_kcy2
     username: emp_kcy2_user
     password: VbKBkto1bkjYFoKWIUCaZ6y5xROcQi7M
-    driver-class-name: org.postgresql.Driver
+
 
   jpa:
     hibernate:
       ddl-auto: update # Change to "create" if you want to recreate the schema on each run (for development only)
     show-sql: true # Enable to see SQL queries in the console (for debugging)
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
